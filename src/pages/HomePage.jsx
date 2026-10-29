@@ -15,7 +15,7 @@ export default function HomePage() {
   return (
     <main className="card chooser">
       <Portrait className="chooser-portrait" />
-      <p className="teacher-name">مستر كريم مدحت</p>
+      <p className="teacher-name">مستر أحمد شريف</p>
       <h1>اختر المرحلة الدراسية</h1>
       <p>ابدأ من بوابة المرحلة للوصول إلى بيانات الطلاب ودرجاتهم.</p>
       <div className="stage-grid">

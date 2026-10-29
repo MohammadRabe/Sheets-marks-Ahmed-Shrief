@@ -1,5 +1,8 @@
-const PHONE_NUMBER = "+201154631859";
-const WHATSAPP_URL = "https://wa.me/201154631859";
+const PHONE_NUMBERS = [
+  { href: "+201123560365", label: "+20 112 356 0365" },
+  { href: "+201022267467", label: "+20 102 226 7467" },
+];
+const WHATSAPP_URL = "https://wa.me/201123560365";
 
 function PhoneIcon() {
   return (
@@ -22,10 +25,12 @@ export default function Footer() {
     <footer className="site-footer" dir="rtl">
       <div className="footer-contact">
         <strong>م/كريم مدحت</strong>
-        <a href={`tel:${PHONE_NUMBER}`} dir="ltr" aria-label="الاتصال بمستر كريم مدحت">
-          <PhoneIcon />
-          <span>+20 11 54631859</span>
-        </a>
+        {PHONE_NUMBERS.map((phone) => (
+          <a key={phone.href} href={`tel:${phone.href}`} dir="ltr" aria-label={`الاتصال على ${phone.label}`}>
+            <PhoneIcon />
+            <span>{phone.label}</span>
+          </a>
+        ))}
       </div>
 
       <p className="footer-copyright">Copyright © 2026</p>

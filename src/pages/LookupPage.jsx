@@ -83,7 +83,7 @@ export default function LookupPage() {
       <main className="card lookup-card">
         <section className="hero">
           <Portrait key={errorPulse} className="hero-portrait" danger={hasError || status.kind === "error"} furious={failedAttempts === 5} />
-          <p className="teacher-name">مستر كريم مدحت</p>
+          <p className="teacher-name">مستر أحمد شريف</p>
           <button className="back-button" type="button" onClick={() => navigate("/")}>العودة إلى المراحل</button>
           <h1>الاستعلام عن بيانات الطالب</h1>
           <p className="lookup-hint">مرحلة <strong className="stage-name">{stage.name}</strong> · اختر المستوى ثم أدخل كود الطالب.</p>
