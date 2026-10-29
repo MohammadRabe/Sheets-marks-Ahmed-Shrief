@@ -24,7 +24,7 @@ export default function Footer() {
   return (
     <footer className="site-footer" dir="rtl">
       <div className="footer-contact">
-        <strong>م/كريم مدحت</strong>
+        <strong>م/أحمد شريف</strong>
         {PHONE_NUMBERS.map((phone) => (
           <a key={phone.href} href={`tel:${phone.href}`} dir="ltr" aria-label={`الاتصال على ${phone.label}`}>
             <PhoneIcon />
